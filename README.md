@@ -18,7 +18,7 @@ To run the code, you will need the following requirements:
 
 ### How to run
 
-The first step to get started is to generate the necessary sublicks. To do that, in **gs_composer/** directory, run the following command line:
+The first step to get started is to generate the necessary sublicks. To do that, in root directory, run the following command line:
 
 ```
 python3 sublicks_generator.py
@@ -35,3 +35,9 @@ Where **d**, **r** and **t** are, respectively, the number of default licks, rep
 ```
 python3 generate_prog.py
 ```
+
+The output progression will be found in the **gs_optimizer/results** directory.
+
+### Considerations
+
+This page is under construction. More content about the system will be released, like other details about parametrization and configuration.
