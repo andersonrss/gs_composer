@@ -1,0 +1,115 @@
+
+# -*- coding: utf-8 -*-
+from lxml import etree
+from copy import deepcopy
+import util
+import random
+
+
+'''
+Realiza as correções nos acordes de 'C'
+'''
+
+def auto_tune_C(measure, notas_validas):
+	
+	notas_validas_proximas = []
+	
+	for i in range(len(measure)):
+	
+		del notas_validas_proximas[:]
+		
+		#se a primeira nota do compasso for um 'F' com duração maior do que uma colcheia com quiáltera
+		if i == 0:
+			util.alterar_nota(measure, notas_validas, 'F', None, 5.333, i, 0)
+		
+		#se houver algum 'F' ao longo do compasso com duração maior que uma colcheia
+		util.alterar_nota(measure, notas_validas, 'F', None, 8, i, 0)
+
+		#se a primeira nota do compasso for um 'D#' com duração maior do que uma colcheia com quiáltera
+		if i == 0:
+			util.alterar_nota(measure, notas_validas, 'D', '1', 5.333, i, 0)
+		
+		#se houver algum 'D#' ao longo do compasso com duração maior que uma colcheia
+		util.alterar_nota(measure, notas_validas, 'D', '1', 8, i, 0)
+
+
+'''
+Realiza as correções nos acordes de 'F'
+'''
+
+def auto_tune_F(measure, notas_validas):
+	
+	notas_validas_proximas = []
+	
+	for i in range(len(measure)):
+	
+		del notas_validas_proximas[:]	
+
+		#se a primeira nota do compasso for um 'A#' com duração maior do que uma colcheia
+		util.alterar_nota(measure, notas_validas, 'A', '1', 8, i, 1)
+
+'''
+Realiza as correções nos acordes de 'G'
+'''
+
+def auto_tune_G(measure, notas_validas):
+	
+	notas_validas_proximas = []
+	
+	for i in range(len(measure)):
+		
+		del notas_validas_proximas[:]	
+		
+		#se a primeira nota do compasso for um 'C' com duração maior do que uma colcheia com quiáltera
+		if i == 0:
+			util.alterar_nota(measure, notas_validas, 'C', None, 5.333, i, 0)
+		
+		#se houver algum 'D#' ao longo do compasso com duração maior do que uma colcheia
+		util.alterar_nota(measure, notas_validas, 'D', '1', 8, i, 0)
+
+		#se a primeira nota do compasso for um 'A#' com duração maior do que uma colcheia com quiáltera
+		if i == 0:
+			util.alterar_nota(measure, notas_validas, 'A', '1', 5.333, i, 1)
+		
+		#se houver algum 'A#' ao longo do compasso com duração maior do que uma colcheia
+		util.alterar_nota(measure, notas_validas, 'A', '1', 8, i, 1)
+
+
+'''
+Realiza correções no solo, utilizando como base notas válidas predeterminadas
+'''
+
+def auto_tune(measure):
+
+	notas_validas_C = []
+	notas_validas_F = []
+	notas_validas_G = []
+
+	notas_val_inpt_C = open("../notas_validas_menor_C.xml", "r")
+	tree_C = etree.parse(notas_val_inpt_C)
+	root_C = tree_C.getroot()
+	
+	for note in list(root_C.find('part').find('measure').iter('note')):
+		notas_validas_C.append(deepcopy(note))
+
+	notas_val_inpt_F = open("../notas_validas_menor_F.xml", "r")
+	tree_F = etree.parse(notas_val_inpt_F)
+	root_F = tree_F.getroot()
+
+	for note in list(root_F.find('part').find('measure').iter('note')):
+		notas_validas_F.append(deepcopy(note))
+
+	notas_val_inpt_G = open("../notas_validas_menor_G.xml", "r")
+	tree_G = etree.parse(notas_val_inpt_G)
+	root_G = tree_G.getroot()
+	
+	for note in list(root_G.find('part').find('measure').iter('note')):
+		notas_validas_G.append(deepcopy(note))
+
+	if measure.get('number') == '2' or measure.get('number') == '3' or measure.get('number') == '4' or measure.get('number') == '5' or measure.get('number') == '8' or measure.get('number') == '9':
+		auto_tune_C(measure, notas_validas_C)
+	if measure.get('number') == '6' or measure.get('number') == '7' or measure.get('number') == '11':
+		auto_tune_F(measure, notas_validas_F)
+	if measure.get('number') == '10':
+		auto_tune_G(measure, notas_validas_G)
+			

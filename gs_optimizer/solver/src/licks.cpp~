@@ -1,0 +1,252 @@
+
+#include <ilcplex/ilocplex.h>
+#include <cstdio>
+#include <iostream>
+#include <vector>
+#include <string.h>
+#include <stdlib.h>
+
+#include "util.h"
+#include "licks.h"
+
+using namespace std;
+
+
+int licks(int nFiles, double taxa_normal, double taxa_repeticao)
+{
+	
+/*  *************************************************
+	*               Pré-Processamento               *
+	*************************************************  */
+	
+	srand(time(NULL));
+	
+	int qtdeVetores = 3;
+	int qtdeTamanhos = qtdeVetores;
+	int *vetorVariaveis, tVetorVariaveis;
+	
+	int *qPausa, n_pausa;
+	int *qRepeticao, n_repeticao;
+	int *qNormal, n_normal;
+
+	qPausa = indices_pausa(&n_pausa);
+	//qRepeticao = indices_repeticao(&n_repeticao);
+	qRepeticao = indices_random(&n_repeticao, taxa_repeticao, (char *) "files/qRepeticao");
+	//qNormal = indices_normal_rand(&n_normal, taxa_normal);
+	qNormal = indices_random(&n_normal, taxa_normal, (char *) "files/qNormal");
+	
+	int *mergeTamanhos = new int [qtdeTamanhos];
+	
+	mergeTamanhos[0] = n_pausa;
+	mergeTamanhos[1] = n_repeticao;
+	mergeTamanhos[2] = n_normal;
+
+	int **mergeVetores = new int *[qtdeVetores];
+	
+	mergeVetores[0] = qPausa;
+	mergeVetores[1] = qRepeticao;
+	mergeVetores[2] = qNormal;
+
+	vetorVariaveis = merge(mergeTamanhos, mergeVetores, qtdeTamanhos, qtdeVetores, &tVetorVariaveis);
+	
+	//declaração da matriz de penalidades
+	double **matrizPen = new double *[nFiles];
+	
+	for (int i = 0 ; i < nFiles ; i++)
+		matrizPen[i] = new double[nFiles];
+		
+	matrizPen = matriz_penalidades(nFiles);
+
+/*  *************************************************
+	*               Modelo Matemático               *
+	*************************************************  */
+	
+	typedef IloArray <IloNumVarArray> NumVarMatrix;
+	
+	int i, j, k;
+	IloEnv env;
+	IloModel modelo(env);
+	char varName[100];
+	char cName[100];
+	
+	//variáveis 'x'
+	NumVarMatrix x(env, nFiles);
+	for (i = 0 ; i < nFiles ; i++){
+		x[i] = IloNumVarArray(env, nFiles);
+		for (j = 0 ; j < nFiles ; j++){
+			x[i][j] = IloNumVar(env, 0.0, 1.0, ILOINT);
+		} 
+	}
+	
+	//adicionando 'x' ao modelo
+	for (i = 0 ; i < nFiles ; i++){
+		if (verifica_variavel(vetorVariaveis, tVetorVariaveis, i) == 1){
+			for (j = 0 ; j < nFiles ; j++){
+				if (i == j)
+					continue;
+				if (verifica_variavel(vetorVariaveis, tVetorVariaveis, j) == 1){
+					sprintf(varName, "x_%d_%d", i, j);
+					x[i][j].setName(varName);
+					modelo.add(x[i][j]);
+				}
+			}
+		}
+	}
+
+	//variáveis 'y'
+	IloBoolVarArray y(env, nFiles);
+	
+	//adicionando 'y' ao modelo
+	for (i = 0 ; i < nFiles ; i++){
+		if (verifica_variavel(vetorVariaveis, tVetorVariaveis, i) == 1){
+			sprintf(varName, "y_%d", i);
+			y[i].setName(varName);
+			modelo.add(y[i]);
+		}
+	}
+
+	//função objetivo
+	IloExpr fo(env);
+	for (i = 0 ; i < nFiles ; i++){
+		if (verifica_variavel(vetorVariaveis, tVetorVariaveis, i) == 1){
+			for (j = 0 ; j < nFiles ; j++){
+				if (i == j)
+					continue;
+				if (verifica_variavel(vetorVariaveis, tVetorVariaveis, j) == 1){
+					fo += matrizPen[i][j] * x[i][j];
+				}
+			}
+		}
+	}
+	modelo.add(IloMinimize(env, fo));
+
+	//restrição 1: entra apenas um arco
+	for (i = 0 ; i < nFiles ; i++){
+		if (verifica_variavel(vetorVariaveis, tVetorVariaveis, i) == 1){
+			IloExpr inFlow(env);
+			for (j = 0 ; j < nFiles ; j++){
+				if (i == j)
+					continue;
+				if (verifica_variavel(vetorVariaveis, tVetorVariaveis, j) == 1){
+					inFlow += x[i][j];
+				}
+			}
+			IloConstraint const_in = (inFlow == y[i]);
+			sprintf(cName, "in_%d", i);
+			const_in.setName(cName);
+			modelo.add(const_in);
+		}
+	}
+	
+	//restrição 2: sai apenas um arco
+	for (j = 0 ; j < nFiles ; j++){
+		if (verifica_variavel(vetorVariaveis, tVetorVariaveis, j) == 1){
+			IloExpr outFlow(env);
+			for (i = 0 ; i < nFiles ; i++){
+				if (j == i)
+					continue;
+				if (verifica_variavel(vetorVariaveis, tVetorVariaveis, i) == 1){
+					outFlow += x[i][j];
+				}
+			}
+			IloConstraint const_out = (outFlow == y[j]);
+			sprintf(cName, "out_%d", j);
+			const_out.setName(cName);
+			modelo.add(const_out);
+		}
+	}	
+	
+	//restrição 3: o tamanho do solo deve ter 12 compassos (10 + 2turnarrounds)
+	IloExpr times(env);
+	for (i = 0 ; i < nFiles ; i++){
+		if (verifica_variavel(vetorVariaveis, tVetorVariaveis, i) == 1){
+			times += y[i];
+		}
+	}
+	IloConstraint const_time = (times == 10);
+	const_time.setName("c_time");
+	modelo.add(const_time);
+	
+	//restrição 4: o número de licks com pausa deve ser exatamente igual à 2
+	IloExpr pausa(env);
+	for (i = 0 ; i < n_pausa ; i++){
+		if (verifica_variavel(vetorVariaveis, tVetorVariaveis, qPausa[i]) == 1){
+			pausa += y[qPausa[i]];
+		}
+	}
+	IloConstraint const_pausa = (pausa == 2);
+	const_pausa.setName("c_pausa");
+	modelo.add(const_pausa);
+	
+	//restrição 5: o número de licks de repeticao deve ser exatamente igual à 1
+	IloExpr repeticao(env);
+	for (i = 0 ; i < n_repeticao ; i++){
+		if (verifica_variavel(vetorVariaveis, tVetorVariaveis, qRepeticao[i]) == 1){
+			repeticao += y[qRepeticao[i]];
+		}
+	}
+	IloConstraint const_repeticao = (repeticao == 1);
+	const_repeticao.setName("c_repeticao");
+	modelo.add(const_repeticao);
+	
+	//restrições 8: um arco saindo de um lick não pode voltar para ele mesmo (eu acho)
+	for (i = 0 ; i < nFiles ; i++){
+		if (verifica_variavel(vetorVariaveis, tVetorVariaveis, i) == 1){
+			for (j = 0 ; j < nFiles ; j++){
+				if (verifica_variavel(vetorVariaveis, tVetorVariaveis, j) == 1){
+					if (i < j){
+						IloConstraint const_sub = (x[i][j] + x[j][i] <= 1);
+						sprintf(cName, "self_%d_%d", i, j);
+						const_sub.setName(cName);
+						modelo.add(const_sub);
+					}
+				}
+			}
+		}
+	}
+	
+	// *** parte do código que auxilia na eliminação de subtours (código de marcos) ***
+	IloArray <IloBoolVarArray> z(env, nFiles);
+    for (i = 0 ; i < nFiles ; i++){
+    	IloBoolVarArray array(env, nFiles);
+    	z[i] = array;
+    }
+    
+    for (i = 0 ; i < nFiles ; i++){
+    	if (verifica_variavel(vetorVariaveis, tVetorVariaveis, i) == 1){
+			for (j = 0 ; j < nFiles ; j++){
+				if (verifica_variavel(vetorVariaveis, tVetorVariaveis, j) == 1){	
+					if (i < j){
+						sprintf(varName, "Z(%d,%d)", i, j);
+						z[i][j].setName(varName);
+						modelo.add(z[i][j]);
+					}
+				}
+			}
+		}
+    }
+    
+	//restrição
+    for (i = 0 ; i < nFiles ; i++){
+    	if (verifica_variavel(vetorVariaveis, tVetorVariaveis, i) == 1){
+			for (j = 0 ; j < nFiles ; j++){
+				if (verifica_variavel(vetorVariaveis, tVetorVariaveis, j) == 1){	
+					if (i < j){
+						IloConstraint constr = (x[i][j] + x[j][i] - z[i][j] == 0);
+						sprintf(cName,"c7_%d_%d", i, j);
+						constr.setName(cName);
+						modelo.add(constr);
+				  	}
+				}
+			}
+		}
+    }
+	
+	IloCplex cplex(env);
+    //cplex.setOut(env.getNullStream());
+    cplex.extract(modelo);
+    cplex.exportModel("licks.lp");
+
+    return 0;
+	
+}

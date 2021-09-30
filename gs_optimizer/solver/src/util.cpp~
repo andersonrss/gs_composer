@@ -1,0 +1,264 @@
+
+#include <ilcplex/ilocplex.h>
+#include <cstdio>
+#include <iostream>
+#include <vector>
+#include <time.h>
+
+#include "util.h"
+
+using namespace std;
+
+
+double** matriz_penalidades(int nFiles)
+{
+	double ** matrizPen = new double *[nFiles];
+	
+	for (int i = 0 ; i < nFiles ; i++)
+		matrizPen[i] = new double[nFiles];
+	
+	string valor;
+	vector <string> aux;
+	ifstream myFile("files/matriz");
+	
+	if (!myFile)
+		cout << "Falha na abertura do arquivo.\n";
+	else 
+		while (getline(myFile, valor, ' '))
+			aux.push_back(valor);
+			
+	int id = 0;
+	for (int i = 0 ; i < nFiles ; i++){
+		for (int j = 0 ; j < nFiles ; j++){
+			matrizPen[i][j] = atoi(aux[id].c_str());
+			id++;
+		}
+	}
+	
+	return matrizPen;
+}
+
+
+int verifica_variavel(int *vetor, int tamanho, int id)
+{
+	int i;
+	
+	for (i = 0 ; i < tamanho ; i++){
+		if (vetor[i] == id){
+			return 1;
+		}
+	}
+	
+	return 0;
+}
+
+
+int* merge(int *mergeTamanhos, int **mergeVetores, int qtdeTamanhos, int qtdeVetores, int *tVetorVariaveis)
+{
+	int index = 0;
+	int tamanho = 0;
+	
+	for (int i = 0 ; i < qtdeVetores ; i++){
+		tamanho += mergeTamanhos[i];
+	}
+	
+	int* vetorVariaveis = new int [tamanho];
+	
+	for (int i = 0 ; i < qtdeTamanhos ; i++){
+		for (int j = 0 ; j < mergeTamanhos[i] ; j++){
+			vetorVariaveis[index] = mergeVetores[i][j];
+			index++;
+		}				
+	}
+	
+	*tVetorVariaveis = tamanho;
+	return vetorVariaveis;
+}
+
+
+int* indices_repeticao(int *n_repeticao)
+{
+	ifstream qRepeticaoFile("files/qRepeticao");
+	int index = 0;
+	
+	if (!qRepeticaoFile){
+		cout << "Falha na abertura do arquivo.\n";
+		return 0;
+	} else
+		qRepeticaoFile >> *n_repeticao;
+	
+	int* qRepeticao = new int [*n_repeticao];
+		
+	while (qRepeticaoFile >> qRepeticao[index]){
+		index++;
+	}
+	
+	return qRepeticao;
+}
+
+int* indices_pausa(int *n_pausa)
+{
+	ifstream qPausaFile("files/qPausa");
+	int index = 0;
+	
+	if (!qPausaFile){
+		cout << "Falha na abertura do arquivo.\n";
+		return 0;
+	} else
+		qPausaFile >> *n_pausa;
+	
+	int* qPausa = new int [*n_pausa];
+		
+	while (qPausaFile >> qPausa[index]){
+		index++;
+	}
+	
+	return qPausa;
+}
+
+int* indices_normal_rand(int *n_normal, double taxa_normal)
+{
+	ifstream qNormalFile("files/qNormal");
+	int index = 0;
+	int contem = 0;
+	int aleatorio;
+	int limite;
+
+	if (!qNormalFile){
+		cout << "Falha na abertura do arquivo.\n";
+		return 0;
+	} else
+		qNormalFile >> *n_normal;
+	
+	limite = *n_normal * taxa_normal;
+	
+	int* qNormalAux = new int [*n_normal];
+	int* qNormal = new int [limite];
+	
+	memset(qNormalAux, -1, *n_normal*sizeof(int));
+	memset(qNormal, -1, limite*sizeof(int));
+	
+	while (qNormalFile >> qNormalAux[index])
+		index++;
+	
+	index = 0;
+	while (index < limite){
+		aleatorio = rand() % *n_normal;
+		for (int i = 0 ; i < limite ; i++){
+			if (qNormalAux[aleatorio] == qNormal[i]){
+				contem = 1;
+				break;
+			}
+		}
+		
+		if (contem == 1){
+			contem = 0;
+			continue;
+		} else {
+			qNormal[index] = qNormalAux[aleatorio];
+			index++;
+		}
+	}
+	
+	*n_normal = limite;
+	return qNormal;
+}
+
+int* indices_repeticao_rand(int *n_repeticao, double taxa_repeticao)
+{
+	ifstream qRepeticaolFile("files/qRepeticao");
+	int index = 0;
+	int contem = 0;
+	int aleatorio;
+	int limite;
+
+	if (!qRepeticaolFile){
+		cout << "Falha na abertura do arquivo.\n";
+		return 0;
+	} else
+		qRepeticaolFile >> *n_repeticao;
+	
+	limite = *n_repeticao * taxa_repeticao;
+	
+	int* qRepeticaoAux = new int [*n_repeticao];
+	int* qRepeticao = new int [limite];
+	
+	memset(qRepeticaoAux, -1, *n_repeticao*sizeof(int));
+	memset(qRepeticao, -1, limite*sizeof(int));
+	
+	while (qRepeticaolFile >> qRepeticaoAux[index])
+		index++;
+	
+	index = 0;
+	while (index < limite){
+		aleatorio = rand() % *n_repeticao;
+		for (int i = 0 ; i < limite ; i++){
+			if (qRepeticaoAux[aleatorio] == qRepeticao[i]){
+				contem = 1;
+				break;
+			}
+		}
+		
+		if (contem == 1){
+			contem = 0;
+			continue;
+		} else {
+			qRepeticao[index] = qRepeticaoAux[aleatorio];
+			index++;
+		}
+	}
+	
+	*n_repeticao = limite;
+	return qRepeticao;
+}
+
+int* indices_random(int *qtde, double taxa, std::string arquivo)
+{
+
+	ifstream qFile(arquivo);
+	int index = 0;
+	int contem = 0;
+	int aleatorio;
+	int limite;
+
+	if (!qFile){
+		cout << "Falha na abertura do arquivo.\n";
+		return 0;
+	} else
+		qFile >> *qtde;
+	
+	limite = *qtde * taxa;
+	
+	int* qAux = new int [*qtde];
+	int* qRandom = new int [limite];
+	
+	memset(qAux, -1, *qtde*sizeof(int));
+	memset(qRandom, -1, limite*sizeof(int));
+	
+	while (qFile >> qAux[index])
+		index++;
+	
+	index = 0;
+	while (index < limite){
+		aleatorio = rand() % *qtde;
+		for (int i = 0 ; i < limite ; i++){
+			if (qAux[aleatorio] == qRandom[i]){
+				contem = 1;
+				break;
+			}
+		}
+		
+		if (contem == 1){
+			contem = 0;
+			continue;
+		} else {
+			qRandom[index] = qAux[aleatorio];
+			index++;
+		}
+	}
+	
+	*qtde = limite;
+	return qRandom;
+}
+
+

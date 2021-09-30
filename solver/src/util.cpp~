@@ -1,0 +1,291 @@
+
+#include <ilcplex/ilocplex.h>
+#include <cstdio>
+#include <iostream>
+#include <vector>
+#include <time.h>
+
+#include "util.h"
+
+using namespace std;
+
+
+int* indices_bend(int *n_bends)
+{
+	ifstream qBendsFile("licks_comuns/exato/files/qBends");
+	int index = 0;
+	
+	if (!qBendsFile){
+		cout << "Falha na abertura do arquivo.\n";
+		return 0;
+	} else
+		qBendsFile >> *n_bends;
+	
+	int* qBends = new int [*n_bends];
+		
+	while (qBendsFile >> qBends[index]){
+		index++;
+	}
+	
+	return qBends;
+}
+
+int* indices_slides(int *n_slides)
+{
+	ifstream qSlidesFile("licks_comuns/exato/files/qSlides");
+	int index = 0;
+	
+	if (!qSlidesFile){
+		cout << "Falha na abertura do arquivo.\n";
+		return 0;
+	} else
+		qSlidesFile >> *n_slides;
+	
+	int* qSlides = new int [*n_slides];
+		
+	while (qSlidesFile >> qSlides[index]){
+		index++;
+	}
+	
+	return qSlides;
+}
+
+int* indices_quialteras(int *n_quialteras)
+{
+	ifstream qQuialterasFile("licks_comuns/exato/files/qQuialteras");
+	int index = 0;
+	
+	if (!qQuialterasFile){
+		cout << "Falha na abertura do arquivo.\n";
+		return 0;
+	} else
+		qQuialterasFile >> *n_quialteras;
+	
+	int* qQuialteras = new int [*n_quialteras];
+		
+	while (qQuialterasFile >> qQuialteras[index]){
+		index++;
+	}
+	
+	return qQuialteras;
+}
+
+int* indices_normal(int *n_normal)
+{
+	ifstream qNormalFile("licks_comuns/exato/files/qNormal");
+	int index = 0;
+	
+	if (!qNormalFile){
+		cout << "Falha na abertura do arquivo.\n";
+		return 0;
+	} else
+		qNormalFile >> *n_normal;
+	
+	int* qNormal = new int [*n_normal];
+		
+	while (qNormalFile >> qNormal[index]){
+		index++;
+	}
+	
+	return qNormal;
+}
+
+int* indices_pausas(int *n_pausas)
+{
+	ifstream qPausasFile("licks_comuns/exato/files/qPausas");
+	int index = 0;
+
+	if (!qPausasFile){
+		cout << "Falha na abertura do arquivo.\n";
+		return 0;
+	} else
+		qPausasFile >> *n_pausas;
+		
+	int* qPausas = new int [*n_pausas];
+		
+	while (qPausasFile >> qPausas[index]){
+		index++;
+	}
+	
+	return qPausas;
+}
+
+int* qtde_notas(int nFiles)
+{
+	ifstream qNotas_sublicksFile("licks_comuns/exato/files/qNotas_sublicks");
+	int* qNotas_sublicks = new int [nFiles];
+	int index = 0;
+
+	if (!qNotas_sublicksFile){
+		cout << "Falha na abertura do arquivo.\n";
+		return 0;
+	} else {
+		while (qNotas_sublicksFile >> qNotas_sublicks[index]){
+			index++;
+		}
+	}
+
+	return qNotas_sublicks;
+}
+
+double* tempo_sublicks(int nFiles)
+{
+	ifstream timeSublicksFile("licks_comuns/exato/files/tSublicks");
+	double* timeSublicks = new double [nFiles];
+	int index = 0;
+
+	if (!timeSublicksFile){
+		cout << "Falha na abertura do arquivo.\n";
+		return 0;
+	} else {
+		while (timeSublicksFile >> timeSublicks[index]){
+			index++;
+		}
+	}
+	
+	return timeSublicks;
+}
+
+double** matriz_penalidades(int nFiles)
+{
+	double ** matrizPen = new double *[nFiles];
+	
+	for (int i = 0 ; i < nFiles ; i++)
+		matrizPen[i] = new double[nFiles];
+	
+	string valor;
+	vector <string> aux;
+	ifstream myFile("licks_comuns/exato/files/matriz");
+	
+	if (!myFile)
+		cout << "Falha na abertura do arquivo.\n";
+	else 
+		while(getline(myFile, valor, ' '))
+			aux.push_back(valor);
+			
+	int id = 0;
+	for (int i = 0 ; i < nFiles ; i++){
+		for (int j = 0 ; j < nFiles ; j++){
+			matrizPen[i][j] = atoi(aux[id].c_str());
+			id++;
+		}
+	}
+	
+	return matrizPen;
+}
+
+int* indices_subconjunto_rand(int nFiles, double taxa_sublicks, int *tamanho_subconjunto)
+{
+	int aleatorio;
+	int index = 0;
+	int contem = 0;
+	int limite;
+	
+	limite = nFiles * taxa_sublicks;
+	
+	int* subconjunto = new int [limite];
+	
+	while (index < limite){
+		aleatorio = rand() % nFiles;
+		for (int i = 0 ; i < limite ; i++){
+			if (subconjunto[i] == aleatorio){
+				contem = 1;
+				break;
+			}
+		}
+		if (contem == 1){
+			contem = 0;
+			continue;
+		} else{
+			subconjunto[index] = aleatorio;
+			index++;
+		}
+	}
+	
+	*tamanho_subconjunto = limite;
+	return subconjunto;
+}
+
+int verifica_variavel(int *vetor, int tamanho, int id)
+{
+	int i;
+	
+	for (i = 0 ; i < tamanho ; i++){
+		if (vetor[i] == id){
+			return 1;
+		}
+	}
+	
+	return 0;
+}
+
+int* merge(int *mergeTamanhos, int **mergeVetores, int qtdeTamanhos, int qtdeVetores, int *tVetorVariaveis)
+{
+	int index = 0;
+	int tamanho = 0;
+	
+	for (int i = 0 ; i < qtdeVetores ; i++){
+		tamanho += mergeTamanhos[i];
+	}
+	
+	int* vetorVariaveis = new int [tamanho];
+	
+	for (int i = 0 ; i < qtdeTamanhos ; i++){
+		for (int j = 0 ; j < mergeTamanhos[i] ; j++){
+			vetorVariaveis[index] = mergeVetores[i][j];
+			index++;
+		}				
+	}
+	
+	*tVetorVariaveis = tamanho;
+	return vetorVariaveis;
+}
+
+int* indices_random(int *qtde, double taxa, char* arquivo)
+{
+	ifstream qFile(arquivo);
+	int index = 0;
+	int contem = 0;
+	int aleatorio;
+	int limite;
+
+	if (!qFile){
+		cout << "Falha na abertura do arquivo.\n";
+		return 0;
+	} else
+		qFile >> *qtde;
+	
+	limite = *qtde * taxa;
+	
+	int* qAux = new int [*qtde];
+	int* qRandom = new int [limite];
+	
+	memset(qAux, -1, *qtde*sizeof(int));
+	memset(qRandom, -1, limite*sizeof(int));
+	
+	while (qFile >> qAux[index])
+		index++;
+	
+	index = 0;
+	while (index < limite){
+		aleatorio = rand() % *qtde;
+		for (int i = 0 ; i < limite ; i++){
+			if (qAux[aleatorio] == qRandom[i]){
+				contem = 1;
+				break;
+			}
+		}
+		
+		if (contem == 1){
+			contem = 0;
+			continue;
+		} else {
+			qRandom[index] = qAux[aleatorio];
+			index++;
+		}
+	}
+	
+	*qtde = limite;
+	return qRandom;
+}
+

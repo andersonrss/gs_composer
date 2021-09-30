@@ -1,0 +1,22 @@
+#ifndef UTIL_H
+#define UTIL_H
+
+
+extern double** matriz_penalidades(int nFiles);
+
+extern int verifica_variavel(int *vetor, int tamanho, int id);
+
+extern int* merge(int *mergeTamanhos, int **mergeVetores, int qtdeTamanhos, int qtdeVetores, int *tVetorVariaveis);
+
+extern int* indices_pausa(int *n_pausa);
+
+extern int* indices_repeticao(int *n_repeticao);
+
+extern int* indices_normal_rand(int *n_normal, double taxa_normal);
+
+extern int* indices_repeticao_rand(int *n_repeticao, double taxa_repeticao);
+
+int* indices_random(int *qtde, double taxa, char* arquivo);
+
+
+#endif

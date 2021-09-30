@@ -1,0 +1,133 @@
+
+# -*- coding: utf-8 -*-
+from lxml import etree
+from copy import deepcopy
+import os
+import determinar_score
+import util
+
+nFiles = 0
+score = 0
+
+qRepeticao = []
+qPausa = []
+qNormal = []
+
+for f in os.listdir('framework_negao_reescrito/banco_licks'):
+	lick = "framework_negao_reescrito/banco_licks/%s.xml" % nFiles
+	inpt = open(lick, "r")
+	tree = etree.parse(inpt)
+	root = tree.getroot()
+	measure = root.find('part').find('measure')
+	notas_lick = deepcopy(list(measure.iter('note')))
+	
+	if util.verifica_repeticao(notas_lick) == 1:
+		qRepeticao.append(nFiles)
+	elif util.verifica_pausa(notas_lick) == 1:
+		qPausa.append(nFiles)
+	else:
+		qNormal.append(nFiles)
+	
+	nFiles += 1
+
+matriz_penalidades = [[0 for i in range(nFiles)] for j in range(nFiles)]
+
+for i in range(nFiles):
+	print "Passando  pelo  lick  %d  de  %d" % (i, j)
+	for j in range(nFiles):
+	
+		#se os licks forem iguais, penalidade infinita
+		if i == j:
+			matriz_penalidades[i][j] = 10000
+			continue
+			
+		#abrindo o arquivo do lick 'a'
+		lick_a = "framework_negao_reescrito/banco_licks/%s.xml" % i
+		inpt_a = open(lick_a, "r")
+
+		#abrindo o arquivo do lick 'b'
+		lick_b = "framework_negao_reescrito/banco_licks/%s.xml" % j
+		inpt_b = open(lick_b, "r")
+
+		#pegando o compasso do lick 'a'
+		tree_a = etree.parse(inpt_a)
+		root_a = tree_a.getroot()
+		measure_a = root_a.find('part').find('measure')
+
+		#pegando o compasso do lick 'b'
+		tree_b = etree.parse(inpt_b)
+		root_b = tree_b.getroot()
+		measure_b = root_b.find('part').find('measure')
+
+		#criando listas com as notas dos compassos dos licks
+		notas_lick_a = deepcopy(list(measure_a.iter('note')))
+		notas_lick_b = deepcopy(list(measure_b.iter('note')))
+
+		#pegando a ultima nota do lick 'a' e a primeira nota do lick 'b'
+		ultima_lick_a = notas_lick_a[-1]
+		primeira_lick_b = notas_lick_b[0]
+
+		#definindo o score entre licks de repetição
+		score += determinar_score.repeticao(notas_lick_a, notas_lick_b)
+
+		#definindo o score entre pausas
+		score += determinar_score.pausas(ultima_lick_a, primeira_lick_b)
+	
+		#definindo o score entre notas sequenciais
+		inpt = open("framework_negao_reescrito/escala_menor.xml", "r")
+		tree = etree.parse(inpt)
+		root = tree.getroot()
+
+		score += determinar_score.notas_sequenciais(ultima_lick_a, primeira_lick_b, root)
+	
+		#definindo o score entre notas repetidas
+		score += determinar_score.notas_iguais(ultima_lick_a, primeira_lick_b)
+	
+		matriz_penalidades[i][j] += score
+		score = 0
+
+#escrevendo a matriz no arquivo
+matrizFile = open("exato/files/matriz", "w")
+
+for i in range(nFiles):
+	for j in range(nFiles):
+		matriz_penalidades[i][j] = str(matriz_penalidades[i][j])
+		matrizFile.write(matriz_penalidades[i][j] + ' ')
+	matrizFile.write('\n')
+	
+#escrevendo o número de licks no arquivo
+nSublicksFile = open("exato/files/nFiles", "w")
+
+nSublicksFile.write(str(nFiles))
+
+#escrevendo os índices dos licks de repeticão no arquivo
+qRepeticaoFile = open("exato/files/qRepeticao", "w")
+
+qRepeticaoFile.write(str(len(qRepeticao)) + ' ')
+
+for i in range(len(qRepeticao)):
+	qRepeticao[i] = str(qRepeticao[i])
+	qRepeticaoFile.write(qRepeticao[i] + ' ')
+
+#escrevendo os índices dos licks com pausa no arquivo
+qPausaFile = open("exato/files/qPausa", "w")
+
+qPausaFile.write(str(len(qPausa)) + ' ')
+
+for i in range(len(qPausa)):
+	qPausa[i] = str(qPausa[i])
+	qPausaFile.write(qPausa[i] + ' ')
+
+#escrevendo os índices dos licks normais no arquivo
+qNormalFile = open("exato/files/qNormal", "w")
+
+qNormalFile.write(str(len(qNormal)) + ' ')
+
+for i in range(len(qNormal)):
+	qNormal[i] = str(qNormal[i])
+	qNormalFile.write(qNormal[i] + ' ')
+
+matrizFile.close()
+qRepeticaoFile.close()
+qNormalFile.close()
+

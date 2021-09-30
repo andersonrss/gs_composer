@@ -1,0 +1,30 @@
+#ifndef UTIL_H
+#define UTIL_H
+
+
+extern int* indices_bend(int *n_bends);
+
+extern int* indices_slides(int *n_slides);
+
+extern int* indices_quialteras(int *n_quialteras);
+
+extern int* indices_normal(int *n_normal);
+
+extern int* indices_pausas(int *n_pausas);
+
+extern int* qtde_notas(int nFiles);
+
+extern double* tempo_sublicks(int nFiles);
+
+extern double** matriz_penalidades(int nFiles);
+
+extern int* indices_subconjunto_rand(int nFiles, double taxa_sublicks, int *tamanho_subconjunto);
+
+extern int verifica_variavel(int *vetor, int tamanho, int id);
+
+extern int* merge(int *mergeTamanhos, int **mergeVetores, int qtdeTamanhos, int qtdeVetores, int *tVetorVariaveis);
+
+extern int* indices_random(int *qtde, double taxa, char* arquivo);
+
+
+#endif

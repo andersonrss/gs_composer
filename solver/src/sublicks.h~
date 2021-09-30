@@ -1,0 +1,10 @@
+
+#ifndef SUBLICKS_H
+#define SUBLICKS_H
+
+
+extern int sublicks(int max_bends, int max_slides, int max_quialteras, int max_pausas, int max_notas, double taxa_bends, double taxa_slides, double taxa_quialteras, double taxa_sublicks, int nFiles);
+
+
+#endif
+

@@ -1,0 +1,227 @@
+
+# -*- coding: utf-8 -*-
+from __future__ import division
+import math
+from copy import deepcopy
+from lxml import etree
+import random
+
+
+'''
+Identifica a duração da nota através do atributo 'type' no arquivo xml
+'''
+
+def get_duracao(nota):
+	
+	if nota.find('type') is not None:
+		if nota.find('type').text == 'whole':
+			duracao_nota = 64
+		elif nota.find('type').text == 'half':
+			duracao_nota = 32
+		elif nota.find('type').text == 'quarter':
+			duracao_nota = 16
+		elif nota.find('type').text == 'eighth':
+			duracao_nota = 8
+		elif nota.find('type').text == '16th':
+			duracao_nota = 4
+		elif nota.find('type').text == '32th':
+			duracao_nota = 2
+		elif nota.find('type').text == '64th':
+			duracao_nota = 1
+	
+	if nota.find('time-modification') is not None:
+		duracao_nota = (duracao_nota * 2)/3
+		
+	if nota.find('dot') is not None:
+		duracao_nota = duracao_nota + duracao_nota/2
+	
+	return duracao_nota
+
+
+'''
+Calcula a distãncia euclidiana entre dois pontos. No caso das notas, utiliza o número das casas e das cordas das mesmas no braço da guitarra
+'''
+
+def distancia_euclidiana(xi, yi, xf, yf):
+
+	return math.sqrt(((xf-xi)**2) + ((yf-yi)**2))
+
+
+'''
+Calcula e retorna a distãncia entre duas notas no braço da guitarra
+'''
+
+def distancia_notas(nota_a, nota_b):
+	
+	casa_nota_a = nota_a.find('notations').find('technical').find('fret').text
+	corda_nota_a = nota_a.find('notations').find('technical').find('string').text
+	
+	casa_nota_b = nota_b.find('notations').find('technical').find('fret').text
+	corda_nota_b = nota_b.find('notations').find('technical').find('string').text
+	
+	x_nota_a = int(casa_nota_a)
+	y_nota_a = 7 - int(corda_nota_a)
+	
+	x_nota_b = int(casa_nota_b)
+	y_nota_b = 7 - int(corda_nota_b)
+	
+	return distancia_euclidiana(x_nota_a, y_nota_a, x_nota_b, y_nota_b)
+
+
+'''
+Calcula um score de transição baseado na difereça de casas e cordas entre as duas notas.
+
+Se as duas notas possuem uma diferença de casas menor que x e uma diferença de cordas menor que y:
+	-> Bonificação de k pontos na transição 
+	Caso contrário:
+		-> Penalização de k pontos na transição
+
+
+def metodo_diferenca(casa_nota_a, corda_nota_a, casa_nota_b, corda_nota_b):
+	
+	dif_casa = abs(int(casa_nota_a) - int(casa_nota_b))
+	dif_corda = abs(int(corda_nota_a) - int(corda_nota_b))
+	
+	if dif_casa > 5 or dif_corda > 2:
+		score = 200
+	else:
+		score = -100
+
+	return score'''
+
+
+'''
+Verifica se o lick em questão é um lick de repetição
+'''
+
+def verifica_repeticao(notas_lick):
+	
+	for note in notas_lick:
+		if get_duracao(note) > 16:
+			return 0
+			
+	acc = 0
+	index = 0
+	subcompassos = [[] for j in range(4)]
+
+	i = 0	
+	while i < len(notas_lick):
+		if (acc + get_duracao(notas_lick[i])) <= 16:
+			subcompassos[index].append(deepcopy(notas_lick[i]))
+			acc += get_duracao(notas_lick[i])
+			i += 1
+		elif acc == 16:
+			index += 1
+			acc = 0
+		elif (acc + get_duracao(notas_lick[i])) > 16:	
+			return 0
+
+	for i in range(len(subcompassos)):
+		for j in range(len(subcompassos[i])):
+			subcompassos[i][j] = etree.tostring(subcompassos[i][j])
+
+	quartos = ["" for i in range(4)]
+	
+	for j in range(len(subcompassos)):
+		for k in range(len(subcompassos[j])):
+			quartos[j] += subcompassos[j][k]
+
+	if ( quartos[0].strip() == quartos[1].strip() == quartos[2].strip() == quartos[3].strip() ) or ( quartos[0].strip() == quartos[1].strip() == quartos[2].strip() ) or ( quartos[1].strip() == quartos[2].strip() == quartos[3].strip() ) or ( quartos[0].strip() == quartos[2].strip() and quartos[1].strip() == quartos[3].strip() ):
+		return 1
+	else:
+		return 0
+
+
+'''
+Verifica se o lick em questão contém alguma pausa
+'''
+
+def verifica_pausa(notas_lick):
+	
+	for note in notas_lick:
+		if note.find('rest') is not None:
+			return 1
+	return 0
+
+
+'''
+Substitui a nota do compasso especificada por uma outra, que foi escolhida aleatoriamente na função "alterar_nota"
+'''
+
+def copia_nota(compasso, notas_validas, nota_valida_aleatoria, index):
+	
+	#verificar se tem slide:
+	if compasso[index].find('notations').find('slide') is not None and compasso[index].find('notations').find('slur') is not None:
+		if compasso[index].find('notations').find('slide').get('type') == "start" and compasso[index].find('notations').find('slur').get('type') == "start":
+			if nota_valida_aleatoria.find('notations').find('technical').find('string').text == compasso[index+1].find('notations').find('technical').find('string').text:
+				etree.SubElement(nota_valida_aleatoria.find('notations'), "slide", type="start")
+				etree.SubElement(nota_valida_aleatoria.find('notations'), "slur", type="start")
+			else:
+				compasso[index+1].find('notations').find('slide').getparent().remove(compasso[index+1].find('notations').find('slide'))
+				compasso[index+1].find('notations').find('slur').getparent().remove(compasso[index+1].find('notations').find('slur'))
+		if compasso[index].find('notations').find('slide').get('type') == "stop" and compasso[index].find('notations').find('slur').get('type') == "stop":
+			if nota_valida_aleatoria.find('notations').find('technical').find('string').text == compasso[index-1].find('notations').find('technical').find('string').text:
+				etree.SubElement(nota_valida_aleatoria.find('notations'), "slide", type="stop")
+				etree.SubElement(nota_valida_aleatoria.find('notations'), "slur", type="stop")
+			else:
+				compasso[index-1].find('notations').find('slide').getparent().remove(compasso[index-1].find('notations').find('slide'))
+				compasso[index-1].find('notations').find('slur').getparent().remove(compasso[index-1].find('notations').find('slur'))
+	
+	#verificar se tem bend:
+	if compasso[index].find('notations').find('technical').find('bend') is not None:
+		for n in range(len(notas_validas)):
+			if (notas_validas[n].find('notations').find('technical').find('string').text == nota_valida_aleatoria.find('notations').find('technical').find('string').text ) and ( notas_validas[n].find('notations').find('technical').find('fret').text == nota_valida_aleatoria.find('notations').find('technical').find('fret').text ):
+				if ( notas_validas[n].find('notations').find('technical').find('string').text != notas_validas[n+1].find('notations').find('technical').find('string').text ) or ( notas_validas[n].find('notations').find('technical').find('fret').text == '0' ):
+					continue
+				
+				inicio = notas_validas[n].find('notations').find('technical').find('fret').text
+				fim = notas_validas[n+1].find('notations').find('technical').find('fret').text
+				dif = (int(fim) - int(inicio))/2
+				dif = str(dif)
+				
+				etree.SubElement(nota_valida_aleatoria.find('notations').find('technical'), "bend")
+				etree.SubElement(nota_valida_aleatoria.find('notations').find('technical').find('bend'), "bend-alter")
+				nota_valida_aleatoria.find('notations').find('technical').find('bend').find('bend-alter').text = dif
+				
+	#verificar se tem quialtera:
+	if compasso[index].find('time-modification') is not None:
+		etree.SubElement(nota_valida_aleatoria, "time-modification")
+		etree.SubElement(nota_valida_aleatoria.find('time-modification'), "actual-notes")
+		etree.SubElement(nota_valida_aleatoria.find('time-modification'), "normal-notes")
+		nota_valida_aleatoria.find('time-modification').find('actual-notes').text = '3'
+		nota_valida_aleatoria.find('time-modification').find('normal-notes').text = '2'
+		
+		nota_valida_aleatoria.find('type').text = compasso[index].find('type').text
+	else:
+		nota_valida_aleatoria.find('type').text = compasso[index].find('type').text
+
+	compasso[index] = deepcopy(nota_valida_aleatoria)
+
+
+'''
+Escolhe uma nota válida, que irá substituir uma nota especificada do compasso
+'''
+
+def alterar_nota(measure, notas_validas, step, alter, time, index, flag):
+
+	notas_validas_proximas = []
+	aux_alter = None
+	
+	if measure[index].find('rest') is None:
+		if measure[index].find('pitch').find('alter') is not None:
+			aux_alter = '1' 
+		
+		if ( measure[index].find('pitch').find('step').text == step ) and ( aux_alter == alter ) and ( get_duracao(measure[index]) > time ) and ( abs(time - get_duracao(measure[index])) > 0.001 ):
+			print 'time   : ' + str(time)
+			print 'duracao: ' + str(get_duracao(measure[index]))
+			
+			for note in notas_validas:
+				if distancia_notas(measure[index], note) <= 2 and abs(int(measure[index].find('notations').find('technical').find('string').text) - int(note.find('notations').find('technical').find('string').text)) < 2:
+					notas_validas_proximas.append(deepcopy(note))
+			indice_valido_aleatorio = random.randint(0, len(notas_validas_proximas)-1)
+			if flag == 1:
+				while notas_validas_proximas[indice_valido_aleatorio].find('pitch').find('step').text == step and aux_alter == alter:
+					indice_valido_aleatorio = random.randint(0, len(notas_validas_proximas)-1)
+			nota_valida_aleatoria = deepcopy(notas_validas_proximas[indice_valido_aleatorio])
+			copia_nota(measure, notas_validas, nota_valida_aleatoria, index)
+

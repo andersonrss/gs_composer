@@ -1,0 +1,10 @@
+
+#ifndef SUBLICKS_H
+#define SUBLICKS_H
+
+
+extern int sublicks(int max_repeticao, int nFiles);
+
+
+#endif
+
