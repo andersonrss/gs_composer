@@ -8,4 +8,15 @@ A solo is generated lick by lick. Each lick is the size of a measure, and each m
 
 The output produced by de system is a MusicXML file that can be reproduced by softwares like [Guitar Pro](https://www.guitar-pro.com/).
 
+### Requirements
 
+To run the code, you will need the following requirements:
+
+1. [Python 3.6+](https://www.python.org/downloads/)
+2. [IBM CPLEX Optimizer](https://www.ibm.com/br-pt/analytics/cplex-optimizer)
+
+### How to run
+
+The first step to get started is to generate the necessary sublicks. To do that, run the following command line:
+
+> 
