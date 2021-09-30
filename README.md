@@ -17,6 +17,8 @@ To run the code, you will need the following requirements:
 
 ### How to run
 
-The first step to get started is to generate the necessary sublicks. To do that, run the following command line:
+The first step to get started is to generate the necessary sublicks. To do that, in **gs_composer/** directory, run the following command line:
 
-> 
+> python3 generate_sublicks.py
+
+
