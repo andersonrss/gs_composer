@@ -43,16 +43,6 @@ for note in list(m1.find('part').find('measure').iter('note')):
 for note in list(m2.find('part').find('measure').iter('note')):
 	ta_lick[1].append(deepcopy(note))
 
-nota = deepcopy(ta_lick[1][-1])
-b = util.create_root("xmls/base.xml")
-for m in list(b.find('part').iter('measure')):
-	m.append(nota)
-b = etree.tostring(b)
-
-with open("teste.xml", "wb") as t:
-	t.write(b)
-
-
 # Extending the last note with a tied note
 copy = deepcopy(ta_lick[1][-1])
 copy.find('type').text = "half"
