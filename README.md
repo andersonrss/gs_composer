@@ -1,4 +1,4 @@
-# Generating guitar solos by ingeter programming
+# Generating guitar solos by integer programming
 
 ### A brief description
 
