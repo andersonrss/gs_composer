@@ -12,8 +12,9 @@ The output produced by de system is a MusicXML file that can be reproduced by so
 
 To run the code, you will need the following requirements:
 
-1. [Python 3.6+](https://www.python.org/downloads/)
-2. [IBM CPLEX Optimizer](https://www.ibm.com/br-pt/analytics/cplex-optimizer)
+1. [lxml](https://lxml.de/) to handle MusicXML files
+2. [Python 3.6+](https://www.python.org/downloads/)
+3. [IBM CPLEX Optimizer](https://www.ibm.com/br-pt/analytics/cplex-optimizer)
 
 ### How to run
 
@@ -29,4 +30,8 @@ After that, you need to generate the set of licks that will be used to generate 
 python3 generate_sublicks.py d r t
 ```
 
-Where **d**, **r** and **t** are, respectively, the number of default licks, repetition licks and turnaround licks to be generated.
+Where **d**, **r** and **t** are, respectively, the number of default licks, repetition licks and turnaround licks to be generated. And finally, to generate the 12-Bar Blues progression, run:
+
+```
+python3 generate_prog.py
+```
