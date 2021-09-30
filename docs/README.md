@@ -1,1 +1,1 @@
-# gs_composer
+# Generating guitar solos by Integer Programming
