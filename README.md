@@ -20,6 +20,13 @@ To run the code, you will need the following requirements:
 The first step to get started is to generate the necessary sublicks. To do that, in **gs_composer/** directory, run the following command line:
 
 ```
-python3 generate_sublicks.py
+python3 sublicks_generator.py
 ```
 
+After that, you need to generate the set of licks that will be used to generate a complete 12-Bar Blues progression. To do so, run:
+
+```
+python3 generate_sublicks.py d r t
+```
+
+Where **d**, **r** and **t** are, respectively, the number of default licks, repetition licks and turnaround licks to be generated.
