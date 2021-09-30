@@ -36,7 +36,7 @@ Where **d**, **r** and **t** are, respectively, the number of default licks, rep
 python3 generate_prog.py
 ```
 
-The output progression will be found in the **gs_optimizer/results** directory.
+The output progression can be found in **gs_optimizer/results**.
 
 ### Considerations
 
