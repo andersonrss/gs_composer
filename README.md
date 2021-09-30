@@ -30,7 +30,7 @@ After that, you need to generate the set of licks that will be used to generate 
 python3 generate_sublicks.py d r t
 ```
 
-Where **d**, **r** and **t** are, respectively, the number of default licks, repetition licks and turnaround licks to be generated. And finally, to generate the 12-Bar Blues progression, run:
+Where **d**, **r** and **t** are, respectively, the number of default licks, repetition licks and turnaround licks to be generated. As a suggestion, try to generate 50 default licks, 15 repetition licks and 10 turnaround licks. And finally, to generate the 12-Bar Blues progression, run:
 
 ```
 python3 generate_prog.py
