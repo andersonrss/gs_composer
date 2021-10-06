@@ -128,7 +128,7 @@ int main(int argc, char *argv[])
     CPXsetintparam (env, CPX_PARAM_THREADS, 1);
 
     CPXsetdblparam (env, CPX_PARAM_EPGAP, 1e-6);
-	CPXsetdblparam (env, CPX_PARAM_TILIM, 140.0);
+	CPXsetdblparam (env, CPX_PARAM_TILIM, 120.0);
 	
     // Necessary when the formulation is incomplete
     CPXsetintparam (env, CPX_PARAM_REDUCE, CPX_PREREDUCE_PRIMALONLY);

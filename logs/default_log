@@ -1,0 +1,2100 @@
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:21:28
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			1			0.5
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:21:29
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:21:29
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:22:35
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			1			0.5
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:24:56
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:25:41
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		1			 -
+REST:				1			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:25:42
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:25:42
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:25:42
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:25:43
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:25:43
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:28:04
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:28:04
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:28:05
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:28:08
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		11			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:28:21
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:28:25
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:28:26
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:28:26
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:28:29
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:28:50
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:29:11
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:29:26
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:29:35
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:29:35
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:29:43
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:30:08
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:30:08
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:30:10
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:30:11
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			1			0.5
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:30:11
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:30:34
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:30:34
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			1			0.5
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:30:35
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:30:59
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:31:34
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:31:34
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:31:37
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:31:41
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:32:39
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:32:41
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:34:22
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			4			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:34:23
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:34:34
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:34:34
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:34:35
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:34:52
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:35:09
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:35:39
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:35:44
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			1			0.5
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:36:14
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:36:15
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:36:19
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			4			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:36:19
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:36:20
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:36:26
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:36:38
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:36:43
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:36:51
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:37:11
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:37:11
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		1			 -
+REST:				1			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:37:11
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:37:38
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:39:59
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:40:00
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			1			0.5
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:40:00
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:40:01
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:40:01
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:40:02
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:41:47
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:42:08
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:44:29
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:44:29
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:44:31
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:44:32
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		11			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:44:55
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:44:55
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			4			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:45:37
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:45:42
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:45:43
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			4			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:45:46
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:45:46
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:48:07
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:48:08
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:48:31
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			1			0.5
+SLIDE:				0			0.0
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		11			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:49:02
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:49:02
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			1			0.5
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:49:05
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:49:05
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:49:06
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:49:08
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:49:10
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:49:10
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:49:10
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			1			0.5
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:49:34
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:49:34
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:49:37
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:49:38
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:49:44
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		11			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:49:44
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:49:56
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			1			0.5
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:49:56
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:50:08
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:51:10
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:51:25
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:51:25
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:51:26
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:51:57
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:51:57
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:52:04
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:52:19
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:52:20
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:52:32
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:52:55
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:52:58
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:53:04
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:53:04
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:53:05
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			1			0.5
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:53:05
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			1			0.5
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:53:05
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			4			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:53:05
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			4			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:53:06
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:53:18
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:53:19
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:53:21
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:53:21
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:53:26
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:54:07
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:54:09
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:54:09
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:55:06
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:55:54
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:55:54
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:57:22
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			1			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:57:29
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:57:30
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:57:31
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:57:35
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		10			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:58:30
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:58:31
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			4			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:58:31
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:58:32
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:58:32
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				0			0.0
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			3			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-02:59:41
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				0			0.0
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		7			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:59:41
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		0			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:59:41
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			4			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				1			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:59:42
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			1			0.5
+SLIDE:				1			0.5
+TRIPLET:			4			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			NO SOLUTION
+DATE: 				30/09/2021-02:59:42
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			2			0.5
+TRIPLET_BEND:		1			0.5
+TRIPLET_BLUE_NOTE:	0			0.0
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		0			 -
+NORMAL_NOTE:		8			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-03:00:05
+-----------------------------------------------
+Type				Quantity	Rate
+BEND:				1			0.5
+BLUE_NOTE:			0			0.0
+SLIDE:				1			0.5
+TRIPLET:			1			0.5
+TRIPLET_BEND:		0			0.0
+TRIPLET_BLUE_NOTE:	1			0.5
+TRIPLET_REST:		1			 -
+REST:				0			 -
+DOUBLE_STOP:		1			 -
+NORMAL_NOTE:		9			0.5
+STATUS: 			SUCCESS
+DATE: 				30/09/2021-03:00:15
+-----------------------------------------------
