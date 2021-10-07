@@ -54,7 +54,6 @@ int main(int argc, char *argv[])
     ProblemData *sptrPData = NULL;
     SolutionData *sptrSData = NULL;
     // AlgorithmData *sptrAData = NULL;
-	cout << "ola\n";
     int i, j, k;
 
     clock_t tRead_init, tRead_end;
