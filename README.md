@@ -36,7 +36,7 @@ Where **d**, **r** and **t** are, respectively, the number of default licks, rep
 python3 generate_prog.py
 ```
 
-If you do not want to generate new licks, you can use the pre-generated licks that are in the folder ```gs_optimizer/lick_database```. Just run the previous command. The output progression can be found in ```gs_optimizer/result```.
+If you do not want to generate new licks, you can use the pre-generated licks that are in the folder ```gs_optimizer/lick_database```, just run the previous command. The output progression can be found in ```gs_optimizer/result```.
 
 ### Considerations
 
