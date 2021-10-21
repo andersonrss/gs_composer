@@ -14,7 +14,8 @@ To run the code, you will need the following requirements:
 
 1. [lxml](https://lxml.de/) to handle MusicXML files
 2. [Python 3.6+](https://www.python.org/downloads/)
-3. [IBM CPLEX Optimizer](https://www.ibm.com/br-pt/analytics/cplex-optimizer)
+
+**[Optional]** If you need to modify code related to the linear programming model, the compilation of the .cpp files is needed. To do that, download and install [IBM CPLEX Optimizer](https://www.ibm.com/br-pt/analytics/cplex-optimizer).
 
 ### How to run
 
@@ -27,7 +28,7 @@ python3 sublicks_generator.py
 After that, you need to generate the set of licks that will be used to generate a complete 12-Bar Blues progression. To do so, run:
 
 ```
-python3 generate_sublicks.py d r t
+python3 generate_licks.py d r t
 ```
 
 Where **d**, **r** and **t** are, respectively, the number of default licks, repetition licks and turnaround licks to be generated. As a suggestion, try to generate 50 default licks, 15 repetition licks and 10 turnaround licks. And finally, to generate the 12-Bar Blues progression, run:
