@@ -30,7 +30,7 @@ if os.stat(route_path).st_size != 0:
 		for line in f:
 			index += 1
 			if index > 20:
-				print("There is no valid solution (" + sublick_type + ")\n")
+				print("\033[33m\nThere is no valid solution (" + sublick_type + ")\033[0m\n")
 				sys.exit(1)
 
 		# Storing route in a list
@@ -90,7 +90,7 @@ if os.stat(route_path).st_size != 0:
 		output.write(rootB)
 	print("\033[92m\nConcatenation concluded\033[0m\n")
 else:
-	print("There was an error in sublicks concatenation (" + sublick_type + "). Aborting...\n")
+	print("\033[33m\nThere is no valid solution (" + sublick_type + ")\033[0m\n")
 	sys.exit(1)
 
 
