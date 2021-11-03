@@ -51,5 +51,3 @@ If you do not want to generate new licks, you can use the pre-generated licks th
 
 This page is under construction. More content about the system will be released, like other details about parametrization and configuration.
 
-
-test
