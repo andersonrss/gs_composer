@@ -31,7 +31,15 @@ After that, you need to generate the set of licks that will be used to generate 
 python3 generate_licks.py d r t
 ```
 
-Where **d**, **r** and **t** are, respectively, the number of default licks, repetition licks and turnaround licks to be generated. As a suggestion, try to generate 50 default licks, 15 repetition licks and 10 turnaround licks. And finally, to generate the 12-Bar Blues progression, run:
+Where **d**, **r** and **t** are, respectively, the number of default licks, repetition licks and turnaround licks to be generated. As a suggestion, try to generate 50 default licks, 15 repetition licks and 10 turnaround licks. 
+
+**[Tip]** To generate new turnaround and repetition licks, you can run this script to clean some auxiliary directories, before licks generation step:
+
+```
+python3 clean_aux_directories.py
+```
+
+And finally, to generate the 12-Bar Blues progression, run:
 
 ```
 python3 generate_prog.py

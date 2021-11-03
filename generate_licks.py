@@ -97,9 +97,6 @@ while index < nDefault:
 # REPETITION LICKS
 
 
-subprocess.call(["rm", "-rf", "repetition_licks/result"])
-subprocess.call(["mkdir", "repetition_licks/result"])
-
 index = 0
 nSubRepetition = 2*nRepetition
 while index < nSubRepetition:
@@ -182,12 +179,6 @@ if rep > 2:
 
 # TURNAROUND LICKS
 
-
-# Cleaning directory
-subprocess.call(["rm", "-rf", "turnaround_licks/result/1"])
-subprocess.call(["rm", "-rf", "turnaround_licks/result/2"])
-subprocess.call(["mkdir", "turnaround_licks/result/1"])
-subprocess.call(["mkdir", "turnaround_licks/result/2"])
 
 index = 0
 
